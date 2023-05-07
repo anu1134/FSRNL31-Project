@@ -1,0 +1,103 @@
+.navbar {
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 6px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.albumExample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background-color: pink;
+    display: none;
+    
+}
+
+.toggle-button .line {
+    background-color: white;
+    color: white;
+    width: 50px;
+    height: 20px;
+}
+
+.albumFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.album {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+img {
+    width: 300px;
+}
+
+.albums {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin: 20px;
+}
+
+.button1 {
+   background-color: blue;
+   color: white;
+}
+
+.albumfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
