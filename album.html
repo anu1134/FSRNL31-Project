@@ -7,6 +7,7 @@
     <title>Learning HTml & CSS</title>
     <link rel="stylesheet" href="album.css">
     <script src="album.js" defer></script>
+    <script src="jsconcepts.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -27,147 +28,158 @@
             </a>
     </nav>
     <div class="albumExample">
-        <h1>Album Example</h1>
-        <p>Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-        <div>
-            <button class="button1"> Main call to action </button>
-            <button> Secondary action </button>
-        </div>  
+        <!-- <h1>Album Example</h1> -->
+        <!-- <p>Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p> -->
+        <!-- <div> -->
+            <!-- <button class="button1"> Main call to action </button> -->
+            <!-- <button> Secondary action </button> -->
+        <!-- </div>   -->
+
+        <form>
+            <h1> Enter Album Details </h1>
+            <label for="image">Enter Image URL</label>
+            <input id="image" type="text">
+
+            <label for="description">Enter Image Description</label>
+            <input id="description" type="text">
+
+            <button id="addAlbum">Add Album</button>
+        </form>
     </div>
 
     <div class="albums">
 
-        <div>
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-    
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-    
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-    
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-    
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-    
-            <div class="album">
-                <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png">
-    
-                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            
-                <div class="albumFooter">
-                <div>
-                    <button>View</button>
-                    <button>Edit</button>
-                </div>
-                <span>9 min</span>
-                </div>
-            </div>
-        </div>
+        <!-- <div> -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+    <!--  -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+    <!--  -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+<!--  -->
+        <!-- <div> -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+<!--  -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+    <!--  -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+<!--  -->
+        <!-- <div> -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+    <!--  -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+    <!--  -->
+            <!-- <div class="album"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/03/17/02/01/cubes-677092__480.png"> -->
+    <!--  -->
+                <!-- <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <!--  -->
+                <!-- <div class="albumFooter"> -->
+                <!-- <div> -->
+                    <!-- <button>View</button> -->
+                    <!-- <button>Edit</button> -->
+                <!-- </div> -->
+                <!-- <span>9 min</span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
 
     <div class="albumfooter">

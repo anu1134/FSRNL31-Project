@@ -3,6 +3,10 @@
     color: white;
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
 }
 
 ul {
@@ -63,8 +67,8 @@ img {
 
 .albums {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background-color: lightgray;
     margin: 20px;
 }
 
