@@ -34,26 +34,71 @@
 
 // console.log(a);
 
+// b();
+// a();
+
+// let x = 1;
+
+// console.log(x);
+
+// function a() {
+//     x = 90;
+//     console.log(x);
+// }
+
+// function b() {
+//     x = 100;
+//     console.log(x);
+// }
+// b();
+
+// Shadowing
+
+// var a = 100;
+// let b = 100;
+// {
+//     var a = 20;
+//     let b = 30; // block scope
+//     const c = 40;
+//     console.log(a); //20
+//     console.log(b); // 30
+//     console.log(c); // 40
+// }
+
+// console.log(a); // 20
+// console.log(b); // error
 
 
+// Illegal shadowing --> we cannot shadow let with var
+// let a = 20;
+// {
+//     var a = 10;
+// }
 
-b();
-a();
 
-let x = 1;
+// This is fine
+// var a = 20;
+// {
+//     let a = 10;
+//     console.log(a);
+// }
 
-console.log(x);
+// const a = 10;
+// function x() {
+//     const c = 100;
+//     console.log(c);
+// }
+// x();
 
-function a() {
-    x = 90;
-    console.log(x);
+let a = 20;
+function x() {
+    var a = 10;
+    console.log(a);
 }
+x();
+    
 
-function b() {
-    x = 100;
-    console.log(x);
-}
-b();
+
 
 
 
