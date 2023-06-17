@@ -2,7 +2,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
 /**
  * <div id="parent">
  *      <div id="child1">
@@ -31,8 +30,10 @@ const parent = React.createElement('div', {id: "parent"}, [
     );
 
 
-    //JSX --- HTML like syntax
+//JSX --- HTML like syntax
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const number = 10;
 
 const header = (
     <>
@@ -72,4 +73,27 @@ root.render(header);
 
 // // render method converts your JS object into html (which browser understands)
 
+
+// React Elements
+// JSX
+
+// React Components
+
+// Functional Componets ----- new way
+// Class Based Components ----- old way
+
+// Functional components ----> Javascript function which returns JSX
+
+const XyzComponent = () => {
+    return <h1> Learning Functional Component </h1>
+}
+
+const AbcComponent = () => {
+    return (
+        <>
+        <XyzComponent />
+        <h1> ABC component</h1>
+        </>
+    )
+};
 
