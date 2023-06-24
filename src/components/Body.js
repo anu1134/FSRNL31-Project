@@ -19,12 +19,14 @@ export const Body = () => {
 
   // useEffect takes two params --- > callback function , dependency array
 
-  async function getRestaurants() {
-    setTimeout(() => {
-      const data = restaurants;
-      setAllRestaurants(data);
-      setFilteredRestaurants(data);
-    }, 1000);
+  function getRestaurants() {
+    fetch("https://restaurant-project1.onrender.com/api/restaurants")
+      .then((res) => res.json())
+      .then((restaurants) => {
+        setAllRestaurants(restaurants);
+        setFilteredRestaurants(restaurants);
+      })
+      .catch((err) => console.log(err));
   }
 
   const isOnline = useOnline();
