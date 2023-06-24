@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const cors = require("cors");
 
 const path = require("path");
 
@@ -14,7 +13,6 @@ app.listen("8000", () => {
 });
 
 app.use(bodyParser.json());
-app.use(cors());
 
 mongoose.connect(dbConfigs.url);
 
