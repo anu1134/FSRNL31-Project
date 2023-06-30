@@ -2,7 +2,7 @@
   "name": "html-css",
   "version": "1.0.0",
   "description": "Learning React",
-  "main": "album.js",
+  "main": "album.html",
   "scripts": {
     "start": "parcel hello.html",
     "test": "jest"
