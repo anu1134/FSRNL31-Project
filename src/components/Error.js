@@ -5,6 +5,8 @@ const Error = () => {
 
   // Object destructuring
   const { data, status, statusText } = err;
+
+  console.log("error", err);
   return (
     <>
       <h1>Oops</h1>

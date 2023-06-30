@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  /* const [isLoggedIn, setIsLoggedIn] = useState(false); */
 
   return (
     <div className="header">
@@ -19,7 +19,8 @@ const Header = () => {
           <li>Cart</li>
         </ul>
       </div>
-      {isLoggedIn ? (
+      <button>Logout</button>
+      {/* {isLoggedIn ? (
         <button
           onClick={() => {
             setIsLoggedIn(false);
@@ -35,7 +36,7 @@ const Header = () => {
         >
           Login
         </button>
-      )}
+      )} */}
     </div>
   );
 };

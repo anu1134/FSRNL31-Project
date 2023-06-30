@@ -1,5 +1,17 @@
-//import React from "react";
-//import ReactDOM from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+console.log("React script");
+
+const header = React.createElement(
+  "h1",
+  { id: "header" },
+  "Hello World using React"
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(header);
 
 /**
  * <div id="parent">
@@ -15,17 +27,17 @@
  * </div>
  */
 
-// const parent = React.createElement("div", { id: "parent" }, [
-//   React.createElement("div", { id: "child1" }, [
-//     React.createElement("h1", {}, "Hello World using React Elements"),
-//     React.createElement("h2", {}, "Hello World using React Elements 1 "),
-//   ]),
+const parent = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", { id: "child1" }, [
+    React.createElement("h1", {}, "Hello World using React Elements"),
+    React.createElement("h2", {}, "Hello World using React Elements 1 "),
+  ]),
 
-//   React.createElement("div", { id: "child2" }, [
-//     React.createElement("h1", {}, "Hello World using React Elements"),
-//     React.createElement("h2", {}, "Hello World using React Elements 1 "),
-//   ]),
-// ]);
+  React.createElement("div", { id: "child2" }, [
+    React.createElement("h1", {}, "Hello World using React Elements"),
+    React.createElement("h2", {}, "Hello World using React Elements 1 "),
+  ]),
+]);
 
 //JSX --- HTML like syntax
 // const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -70,23 +82,23 @@
 
 // React Components
 
-// Functional Componets ----- new way
+// Functional Components ----- new way
 // Class Based Components ----- old way
 
 // Functional components ----> Javascript function which returns JSX
 
-// const XyzComponent = () => {
-//   return <h1> Learning Functional Component </h1>;
-// };
+const XyzComponent = () => {
+  return <h1> Learning Functional Component </h1>;
+};
 
-// const AbcComponent = () => {
-//   return (
-//     <>
-//       <XyzComponent />
-//       <h1> ABC component</h1>
-//     </>
-//   );
-// };
+const AbcComponent = () => {
+  return (
+    <>
+      <XyzComponent />
+      <h1> ABC component</h1>
+    </>
+  );
+};
 // let accessToken;
 
 // fetch("https://restaurant-project1.onrender.com/api/login", {

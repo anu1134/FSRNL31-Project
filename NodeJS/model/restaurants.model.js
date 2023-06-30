@@ -15,4 +15,8 @@ const restaurantModel = mongoose.model("Restaurant", restaurantSchema);
 
 module.exports = restaurantModel;
 
+// POST
+// GET // all reviews
+// name , review , rating
+
 //React Query   ----> fetch data from api

@@ -10,6 +10,9 @@ import Footer from "./src/components/Footer";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Profile from "./src/components/Profile";
 import Shimmer from "./src/components/Shimmer";
+import Login from "./src/components/Login";
+import { Navigate } from "react-router-dom";
+import { useState } from "react";
 
 // Lazy Loading
 // Dynamic Import
@@ -20,7 +23,15 @@ import Shimmer from "./src/components/Shimmer";
 const Instamart = lazy(() => import("./src/components/Instamart"));
 
 const AppLayout = () => {
-  return (
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  function setIsLoggedIn(value) {
+    setLoggedIn(value);
+  }
+
+  return !loggedIn ? (
+    <Login isLoginMethod={setIsLoggedIn}></Login>
+  ) : (
     <>
       <div className="app">
         <Header />
@@ -38,7 +49,7 @@ const appRouter = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        path: "/about",
+        path: "about",
         element: <About />,
         children: [
           {
@@ -48,7 +59,7 @@ const appRouter = createBrowserRouter([
         ],
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact />,
       },
       {
@@ -56,11 +67,11 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
-        path: "/restaurant/:id",
+        path: "restaurant/:id",
         element: <RestaurantMenu />,
       },
       {
-        path: "/instamart",
+        path: "instamart",
         element: (
           <Suspense fallback={<Shimmer />}>
             <Instamart />

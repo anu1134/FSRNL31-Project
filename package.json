@@ -30,6 +30,7 @@
     "mongoose": "^7.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.11.2",
     "serverless": "^3.32.2",
     "serverless-http": "^3.2.0"

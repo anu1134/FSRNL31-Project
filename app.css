@@ -16,7 +16,7 @@
   margin-top: 25px;
 }
 
-.nav-items > ul > li {
+.nav-items > ul > a {
   margin: 10px;
 }
 
@@ -74,4 +74,16 @@
 
 .menu-list {
   margin: 50px;
+}
+
+.top-restaurants-bar {
+  display: flex;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
